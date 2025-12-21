@@ -1,0 +1,457 @@
+body{
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: verdana, geneva, tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+   
+}
+/* header section starts */
+/* to fix header part we will use fixed position so that even after scrolling down header part remain fixed on its original position*/
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow:0.5rem 1rem rgba(0,0,0,0.1);
+}
+/*header logo */
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: 900;
+}
+header .logo span{
+    color: #fdc5f5;
+
+}
+header .navbar a{
+    font-size:20px;
+    padding: 0 1.5rem;
+    color: #666;
+
+}
+header .navbar a:hover{
+    color:#fdc5f5;
+    font-weight: 600;
+}
+/* header navbar icons*/
+header .icons a{
+    font-size: 3rem;
+    color:#333;
+    margin-left:1.5rem;
+}
+header .icons a:hover{
+    color:#fb6f92;
+
+}
+/*header input*/
+header #toggler{
+    display:none;
+}
+/*some issue with clicking*/
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    padding:0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display:none;
+}
+@media (max-width: 991px){
+    html{
+        font-size;55%
+    }
+    header{
+        padding:2rem;
+    }
+}
+@media (max-width: 768px){
+    header .fa-bars{
+        display:block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#eee;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background-color:#fff;
+        border:1rem solid rgba(0,0,0,0.1);
+        display:block;
+
+    }
+
+}
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+/* home section starts */
+section{
+    padding:2rem 9% ;
+}
+
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(flower.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.home .content{
+    max-width: 50rem;
+
+}
+.home .content h3{
+    font-size: 6rem;
+    color:#8d7799;
+    padding: 1rem 0;
+
+
+}
+.home .content span{
+    font-size:3.5rem;
+    color: #ffe5ec;
+    padding: 1rem 0;
+    line-height: 1.5rem;
+
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height:1.5;
+}
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    background-color:#333;
+    color:#ffff;
+    padding: 0.9rem 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius:3rem;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color:#fb6f92;
+}
+
+@media (max-width: 991px){
+    section{
+        padding:2rem;
+    }
+
+.home{
+    background-position: left;
+}
+.home .content h3{
+    font-size: 5rem;
+    }
+    .home .content span{
+        font-size:2.5rem;
+}
+}
+/*home section ends*/
+
+/*about section starts*/
+.heading{
+    text-align:center;
+    font-size: 4rem;
+    padding:1 rem;
+    color:#333;
+    margin: 2rem 0;
+    background-color: rgba(219, 195, 206, 0.25);
+
+}
+.heading span{
+    color:#fb6f92;
+}
+.about .row{
+    display:flex;
+    align-items:center;
+    gap: 2rem;
+    flex-wrap:wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video_container{
+    flex: 1 1 40rem;
+    position: relative;
+
+}
+.about .row .video_container video{
+    width: 100%;
+    height: 100%;
+    border:1.5rem solid #fff;
+    box-shadow:0 0.5rem 1rem rgba(0 ,0,0,0.1);
+    object-fit: cover;
+}
+.about .row .video_container h3{
+    position: absolute;
+    top: 50% ;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background-color:#fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align:center;
+    mix-blend-mode: screen;
+
+}
+.about .row .content{
+    flex: 1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size:1.5rem;
+    color: #999;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height:1.5rem;
+}
+@media(max-width: 450px){
+    .heading{
+        font-size:3rem;
+    }
+}
+/*icons start*/
+.icons_container{
+    background-color:#d1c2c5;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom:5rem;
+    
+}
+.icons_container .icons{
+    background-color:#fff;
+    border: 0.1rem solid rgba(0 ,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    align-items:center;
+    flex: 1 1 25rem;
+}
+.icons_container .icons i{
+    font-size: 5rem;
+    margin-right: 2rem;
+    color:#333;
+
+}
+.icons_container .icons h3{
+    color:#333;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.icons_container .icons span{
+    color:#555;
+    font-size:1.3rem;
+}
+@media (max-width: 768px){
+    .icons_container .icons h3{
+        font-size: 2rem;
+    }
+    .icons_container .icons span{
+        font-size: 1.7rem;
+    }
+}
+/* product section starts*/
+.products .card_container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.products .card_container .card{
+    flex: 1 1 30rem;
+    box-shadow : 0 0.5rem 1rem rgba(0 ,0,0,0.1);
+    border-radius: 0.8rem;
+    border:0.1rem solid rgba(0 ,0,0,0.1);
+    position:relative;
+
+}
+.products .card_container .card .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.7rem  1rem;
+    color: #fb6f92;
+    background-color:rgba(255,51,184,0.05);
+    z-index:1;
+    border-radius:0.5rem;
+
+}
+
+.products .card_container .card .card_img{
+    position: relative;
+    text-align:center;
+    padding-top: 2rem ;
+    overflow: hidden;
+
+}
+.products .card_container .card .card_img img{
+    height: 25rem;
+    
+}
+.products .card_container .card:hover .card_img img{
+    transform:scale(1.1);
+
+}
+.products .card_container .card .card_img .icons{
+   position:absolute;
+   bottom: -7rem;
+   left: 0;
+   right: 0;
+   display: flex;
+}
+.products .card_container .card:hover .card_img .icons{
+    bottom:0;
+}
+.products .card_container .card .card_img .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.8rem;
+    width: 50%;
+    background-color:#fb6f92;
+    color:#ccc;
+}
+.products .card_container .card .card_img .icons .card_btn{
+  border-left: 0.1rem solid#fff;
+  border-right: 0.1rem solid#fff;
+  width:100%;
+
+}
+products .card_container .card .card_img .icons :hover{
+    background-color:#333;
+
+}
+.products .card_container .card .content{
+    padding:2rem;
+    text-align:center;
+
+}
+.products .card_container .card .content h3{
+    font-size:2.5rem;
+    color: #333;
+
+}
+.products .card_container .card .content .price{
+    font-size:2rem;
+    color: #fb6f92;
+    font-weight: bolder;
+    padding-top: 1rem;
+
+}
+.products .card_container .card .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight:lighter;
+    text-decoration:line-through;
+}
+/* products end*/
+/*reviews section starts */
+
+.review .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.review .card_container .card{
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0 ,0,0,0.1);
+    border: 1rem solid rgba(0 ,0,0,0.1);
+    border-radius:0.5rem;
+    padding: 3rem 2rem;
+    border:1rem solid rgba(0 ,0,0,0.1);
+}
+.review .card_container .card .starts i{
+  color: #fb6f92;
+  font-size: 2rem;  
+}
+review .card_container .card p{
+    color:#999;
+    font-size:1.5rem;
+    line-height:1.5rem;
+    padding-top:2rem;
+
+}
+review .card_container .card .user{
+    display:flex;
+    align-items:center;
+    padding: 2rem;
+
+}
+review .card_container .card .user img{
+  height:6rem;
+  width: 6rem;
+  border-radius:50%;
+  object-fit:cover;
+  
+
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+/*about section ends */
+
