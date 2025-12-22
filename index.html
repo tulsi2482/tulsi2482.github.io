@@ -1,37 +1,333 @@
-
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practise time</title>
-    <style>
-        .box{
-            height:100px;width:100px; text-align:center;
-        }<!
-        #box1{
-            background-color:blueviolet; text-decoration: line-through;text-transform:lowercase; padding:5px 10px 15px 20px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flower website</title>
+    <link rel="stylesheet" href="./project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fa-solid fa-bars"></label>
 
-        }
-        #box2{
-            background-color:aqua;text-decoration:line-through;text-transform:lowercase;
-        }
-        #box3{
-            background-color:cadetblue;text-decoration:none;text-transform:uppercase;
-    
-             }
-              </style>
-</head>
-<body>
-    <div>
-        <h1 class="box" id ="box1">box1</h1><br><br>
-        <h1 class="box" id ="box2">box2</h1><br>
-        <h1 class="box" id="box3">box3</h1>
+      <a href="#" class="logo">flower<span>&#128144;</span></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Product</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!--header section ends-->
+    <!--home section starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Fresh Flowers</h3>
+        <span>Natural & beautiful flowers</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsum
+          nulla alias recusandae reiciendis quis consequuntur debitis quibusdam
+          est molestiae consequatur impedit, doloribus voluptatibus vero
+          voluptates animi autem iusto excepturi!
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+    <!--home section end-->
+    <!--about section starts-->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+
+      <div class="row">
+        <div class="video_container">
+        <video src="https://v.ftcdn.net/01/50/01/99/700_F_150019993_Ii0KrNfiS1FvPVdpJlKw2gVaTcArt4k2_ST.mp4" loop autoplay muted></video>
+            <h3>best flower sellers</h3>
+            
+
+
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nobis dolore expedita ipsa, molestias officia quam, doloribus non omnis modi veniam minima corporis illum distinctio sequi doloremque numquam. At, dolores?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perferendis laborum quia nisi voluptatibus ab temporibus eaque dolor aut, dignissimos numquam corporis libero. Cumque nisi illo in eos! Alias, vitae!</p>
+            <a href="#" class="btn">learn more</a>
+       </div>
+      </div>
+    </section>
+    <!--about section ends-->
+    <!--icons 1-->
+    <section class="icons_container">
+      <div class="icons">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="info">
+          <h3>Free Delivery</h3>
+          <span>On All Orders</span>
+  
+        </div>
+      </div>
+      <!--icons 2-->
+      <div class="icons">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <div class="info">
+          <h3>Same Day Return</h3>
+          <span>Moneyback Guarantee</span>
+  
+        </div>
+      </div>
+      <!--icons 3-->
+      <div class="icons">
+        <i class="fa-solid fa-gift"></i>
+        <div class="info">
+          <h3>Offers & Gifts</h3>
+          <span>On All Orders</span>
+  
+        </div>
+      </div>
+      <!--icons 4-->
+      <div class="icons">
+        <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
+        <div class="info">
+          <h3>Secure Payment </h3>
+          <span>Protected by Paypal</span>
+  
+        </div>
+      </div>
+      </section>
+      <!--icons section ends-->
+    <!--product section starts-->
+
+     <section class="products" id="products">
+      <h1 class="heading">Latest <span>Products</span></h1>
+      <!--products name-->
+      <div class="card_container">
         
+        <!--card1-->
+        <div class="card">
+       <span class="discount">-20%</span>
+          <div class="card_img">
+            <img src="image1.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$10.24<span>$20.89</span></div>
+              
+            </div>
+          </div>
+          <!--card2-->
+        <div class="card">
+          <span class="discount">-47.05%</span>
+          <div class="card_img">
+            <img src="images 8.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$10.00<span>$18.89</span></div>
+              
+            </div>
+          </div>
+          <!--card3-->
+        <div class="card">
+          <span class="discount">-25%</span>
+          <div class="card_img">
+            <img src="images 10.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$15.00<span>$20.89</span></div>  
+              
+            </div>
+          </div>
+          
+          <!--card5-->
+        <div class="card">
+          <span class="discount">-33.33%</span>
+          <div class="card_img">
+            <img src="images 9.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$20.00<span>$30.00</span></div>
+              
+            </div>
+          </div>
+          <!--card6-->
+        <div class="card">
+          <span class="discount">-38.30%</span>
+          <div class="card_img">
+            <img src="image6.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$12.89<span>$20.89</span></div>
+              
+            </div>
+          </div>
+          <!--card7-->
+        <div class="card">
+          <span class="discount">-25.04%</span>
+          <div class="card_img">
+            <img src="image7.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$15.66<span>$20.89</span></div>
+              
+            </div>
+          </div>
+          <!--card8-->
+        <div class="card">
+          <span class="discount">-19.04%</span>
+          <div class="card_img">
+            <img src="images 8.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$20.24<span>$25.00</span></div>
+              
+            </div>
+          </div>
+          <!--card9-->
+        <div class="card">
+          <span class="discount">-22.26%</span>
+          <div class="card_img">
+            <img src="images 9.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$16.24<span>$20.89</span></div>
+              
+            </div>
+          </div>
+          <!--card7-->
+        <div class="card">
+          <span class="discount">-25.04%</span>
+          <div class="card_img">
+            <img src="image7.jpg">
+            <div class="icons">
+              <a href="#"class="fa-solid fa-heart"></a>
+              <a href="#"class="card_btn">Add To Cart</a>
+              <a href="#"class="fa-solid fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower</h3>
+            <div class="price">$15.66<span>$20.89</span></div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--products part done-->
+      <!--Reviews section starts-->
+      <section class="review" id="review">
+        <h1 class="heading">Customer's <span>Review</span></h1>
+        <div class="card_container">
+          <!--customer 1-->
+          <div class="card">
+            <div class="starts">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>beautifulll i am really satisfied loved and loved these so muchh</p>
+            <img src="person (1).jpg">
+            <div class="user_info">
+              <h3>tia</h3>
+              <span>Satisfied</span>
+            </div>
+          </div>
+          <!--customer 2-->
+          <div class="card">
+            <div class="starts">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>worth the price...delivered on same day..i am so happy with purchase</p>
+            <div class="user"></div>
+            <img src="person3.jpg">
+            <div class="user_info">
+              <h3>tarun</h3>
+              <span>Satisfied</span>
+            </div>
+          </div>
+          <!--customer 3-->
+          <div class="card">
+            <div class="starts">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>really fresh and preety..loved these!!</p>
+            <div class="user"></div>
+            <img src="person3.jpg">
+            <div class="user_info">
+              <h3>liya</h3>
+              <span>Satisfied</span>
+            </div>
+          </div>
+          
+        </div>
+        </section>
+      
 
-    </div>
-</body>
-</html>
-    
-</body>
+  </body>
 </html>
