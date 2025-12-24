@@ -332,6 +332,8 @@ section{
     padding-top: 2rem ;
     overflow: hidden;
     background-color: #794a4a;
+    border-radius:0.5rem;
+    
 
 }
 .products .card_container .card .card_img img{
@@ -359,6 +361,7 @@ section{
     width: 50%;
     background-color:#50061b;
     color:#ccc;
+
 }
 .products .card_container .card .card_img .icons .card_btn{
   border-left: 0.1rem solid#fff;
@@ -376,13 +379,15 @@ products .card_container .card .card_img .icons :hover{
 
 }
 .products .card_container .card .content h3{
-    font-size:2.5rem;
-    color: #333;
+    font-size:1.5rem;
+    color: #350202;
+    
+
 
 }
 .products .card_container .card .content .price{
     font-size:2rem;
-    color: #fb6f92;
+    color: #6c041e;
     font-weight: bolder;
     padding-top: 1rem;
 
@@ -401,7 +406,6 @@ products .card_container .card .card_img .icons :hover{
     gap: 1.5rem;
     align-items: center;
 
-
 }
 .contact .row form{
     flex: 1 1 40rem;
@@ -409,7 +413,7 @@ products .card_container .card .card_img .icons :hover{
     box-shadow: 0 0.5rem 1.5rem rgba(0 ,0,0,0.1);
     border: 1rem solid rgba(0 ,0,0,0.1);
     border-radius: 0.5rem;
-    background-color:#fff;
+    background-color:#f26f6f;
 
     
 }
@@ -431,7 +435,7 @@ products .card_container .card .card_img .icons :hover{
     width: 100%;
 }
 .contact .row form .card:focus{
-    border-color:#fb6f92;
+    border-color:#dc0a3f;
 }
 
 .contact .row form textarea{
