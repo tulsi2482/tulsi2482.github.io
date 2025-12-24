@@ -331,6 +331,7 @@ section{
     text-align:center;
     padding-top: 2rem ;
     overflow: hidden;
+    background-color: #794a4a;
 
 }
 .products .card_container .card .card_img img{
@@ -356,7 +357,7 @@ section{
     line-height: 5rem;
     font-size: 1.8rem;
     width: 50%;
-    background-color:#fb6f92;
+    background-color:#50061b;
     color:#ccc;
 }
 .products .card_container .card .card_img .icons .card_btn{
