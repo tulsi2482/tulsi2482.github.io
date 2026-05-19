@@ -66,10 +66,12 @@
     <!--icons 1-->
     <section class="icons_container">
       <div class="icons">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="info">
-          <h3>Free Delivery</h3>
-          <span>On All Orders</span>
+        <div class="icons">
+  <a href="#" id="theme-toggle" class="fas fa-moon"></a>
+  <a href="#" class="fas fa-heart"></a>
+  <a href="#" id="cart-icon" class="fas fa-shopping-cart"></a>
+  <a href="#" class="fas fa-user"></a>
+</div>
   
         </div>
       </div>
@@ -329,5 +331,24 @@
         </div>
         <div class="credit">Created By <span>Ms. Tulsi </span> | All Rights Reserved</div>
       </section>
+      <!-- SIDE CART DRAWER -->
+<div id="cart-drawer" class="cart-drawer">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <i id="close-cart" class="fas fa-times"></i>
+  </div>
+  
+  <!-- Items iske andar dynamic javascript se aayenge -->
+  <div class="cart-items">
+    <p class="empty-message">Your cart is empty 🌸</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="total-price">Total: $0.00</div>
+    <button class="btn checkout-btn">Checkout Now</button>
+  </div>
+</div>
+
+      <script src="./project.js"></script>
   </body>
 </html>
